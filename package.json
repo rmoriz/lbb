@@ -1,0 +1,30 @@
+{
+  "name": "lbb",
+  "version": "0.0.1",
+  "description": "Screenscraper for LBB.de credit card statements",
+  "main": "index.js",
+  "bin" : {
+    "lbb" : "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lbb.de",
+    "amazon",
+    "credit-card",
+    "kreditkarte",
+    "rechnung",
+    "pdf",
+    "statement",
+    "invoice",
+    "payment",
+    "tax"
+  ],
+  "dependencies": {
+    "nightmare": "~2.3.4",
+    "nightmare-download-manager": "~0.2.0"
+  },
+  "author": "Roland Moriz",
+  "license": "MIT"
+}
