@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/rmoriz/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/Users/rmoriz/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@3.9.3
+3 info using node@v4.4.5
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/rmoriz/sync/Projekte/lbb',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/rmoriz/.npm/lbb/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/rmoriz/.npm correctMkdir not in flight; initializing
+10 info lifecycle lbb@0.0.1~prepublish: lbb@0.0.1
+11 silly lifecycle lbb@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/rmoriz/.npm/lbb/0.0.1/package.tgz',
+12 verbose tar pack   '/Users/rmoriz/sync/Projekte/lbb' ]
+13 verbose tarball /Users/rmoriz/.npm/lbb/0.0.1/package.tgz
+14 verbose folder /Users/rmoriz/sync/Projekte/lbb
+15 verbose addLocalTarball adding from inside cache /Users/rmoriz/.npm/lbb/0.0.1/package.tgz
+16 verbose correctMkdir /Users/rmoriz/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd lbb@0.0.1
+18 verbose afterAdd /Users/rmoriz/.npm/lbb/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/rmoriz/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/rmoriz/.npm/lbb/0.0.1/package/package.json written
+21 silly publish { name: 'lbb',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'Screenscraper for LBB.de credit card statements',
+21 silly publish   main: 'index.js',
+21 silly publish   bin: { lbb: './index.js' },
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords:
+21 silly publish    [ 'lbb.de',
+21 silly publish      'amazon',
+21 silly publish      'credit-card',
+21 silly publish      'kreditkarte',
+21 silly publish      'rechnung',
+21 silly publish      'pdf',
+21 silly publish      'statement',
+21 silly publish      'invoice',
+21 silly publish      'payment',
+21 silly publish      'tax' ],
+21 silly publish   dependencies: { nightmare: '~2.3.4', 'nightmare-download-manager': '~0.2.0' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/rmoriz/lbb.git' },
+21 silly publish   author: { name: 'Roland Moriz' },
+21 silly publish   license: 'MIT',
+21 silly publish   gitHead: 'c372b909395c6626dc280903f7233781b37867f3',
+21 silly publish   bugs: { url: 'https://github.com/rmoriz/lbb/issues' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   homepage: 'https://github.com/rmoriz/lbb#readme',
+21 silly publish   _id: 'lbb@0.0.1',
+21 silly publish   _shasum: 'fea40ccbcead13e0e89206e1b5cba69548f6c824',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name lbb
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'lbb',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'lbb',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/lbb
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/rmoriz/.npm/lbb/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/lbb
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 00:05:12
+33 verbose request using bearer token for auth
+34 verbose request id 480e858b57b0c374
+35 http request PUT https://registry.npmjs.org/lbb
+36 http 403 https://registry.npmjs.org/lbb
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '128',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 12 Jun 2016 22:05:14 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-fra1241-FRA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1465769112.582915,VS0,VE1760',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/rmoriz/.npm/registry.npmjs.org/lbb on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.1. Try bumping the version to 1.0.0" : lbb
+40 verbose stack     at makeError (/Users/rmoriz/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/rmoriz/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/rmoriz/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/rmoriz/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/Users/rmoriz/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/rmoriz/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid lbb
+43 verbose cwd /Users/rmoriz/sync/Projekte/lbb
+44 error Darwin 15.5.0
+45 error argv "/Users/rmoriz/.nvm/versions/node/v4.4.5/bin/node" "/Users/rmoriz/.nvm/versions/node/v4.4.5/bin/npm" "publish" "./"
+46 error node v4.4.5
+47 error npm  v3.9.3
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.1. Try bumping the version to 1.0.0" : lbb
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

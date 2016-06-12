@@ -1,6 +1,6 @@
 {
   "name": "lbb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Screenscraper for LBB.de credit card statements",
   "main": "index.js",
   "bin" : {
@@ -24,6 +24,10 @@
   "dependencies": {
     "nightmare": "~2.3.4",
     "nightmare-download-manager": "~0.2.0"
+  },
+  "repository" :
+    { "type" : "git"
+    , "url" : "https://github.com/rmoriz/lbb"
   },
   "author": "Roland Moriz",
   "license": "MIT"
